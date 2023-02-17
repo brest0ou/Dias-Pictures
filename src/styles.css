@@ -1,5 +1,5 @@
 body {
-    width: 320px;
+    
 }
 /* Header */
 .ita {
@@ -16,7 +16,7 @@ body {
 
 .text-header {
     position: absolute;
-    width: 320px;
+    width: 100%;
     height: 37px;
     margin-right: 80px;
     display: flex;
@@ -31,14 +31,13 @@ body {
 }
 
 .image {
-    width: 320px;
+    width: 100%;
     height: 98px;
 }
 
 .image img{
     margin-top: 46px;
     width: 100%;
-    height: 100%;
     object-fit: contain;
     
     box-shadow: 0px 4px 4px #F2D7EB;
@@ -51,9 +50,21 @@ a img{
     color: #B06FE3;
 }
 
-.card-img {
-    top: 80px;
+
+
+.box{
+
+    width: 170px;
     margin: auto;
+}
+
+.container {
+    margin-top: 90px;
+}
+
+.card-img {
+
+    margin-bottom: 50px;
     position: relative;
     width: 170px;
     height: 166px;
@@ -62,6 +73,7 @@ a img{
     border-radius: 6px;
     width: 170px;
     height: 166px;
+    
     
 }
 
@@ -92,4 +104,79 @@ a img{
     color: #b16fe3;
     font-family: 'Italianno', cursive;
     font-size: 22px;
+}
+
+/* adaptateur écran */
+
+@media screen and (min-width: 370px) {
+
+    
+    .container {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (min-width: 428px) {
+    .container {
+        margin-top: 170px;
+    }
+    
+    .card-img {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 630px) {
+
+    .ita {
+        font-size: 32px;
+    }
+
+    .inspi {
+        font-size: 34px;
+    }
+
+    .container {
+        display: grid;
+        margin-top: 240px;
+        grid-template-columns: 1fr 1fr;
+        
+        row-gap: 70px;
+    }   
+    .box {
+        width: 270px;
+        height: 204px;
+    }
+    
+    .card-img {
+        margin-top: 0px;
+        width: 270px;
+        height: 204px;
+    }
+    
+    .card-img img {
+        width: 270px;
+        height: 204px;
+    }
+    
+    .text-card {
+        height: 50px;
+    }
+
+    .txt {
+        font-size: 30px;
+    }
+
+    .annee {
+        font-size: 28px;
+    }
+
+    .text-header {
+        padding-top: 18px;
+        height: 60px;
+    }
+
+    a img {
+        height: 40px;
+    }
 }
