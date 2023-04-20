@@ -1,6 +1,3 @@
-body {
-    
-}
 /* Header */
 header {
     position: relative;
@@ -285,5 +282,37 @@ a img{
 
     .container {
         margin-top: 640px;
+    }
+}
+
+@media screen and (min-width: 2120px) {
+
+    .ita {
+        font-size: 50px;
+    }
+
+    .inspi {
+        font-size: 50px;
+    }
+
+    a img{
+        padding-top: 2px;
+        height: 48px;
+        color: #B06FE3;
+    }
+
+    .text-header {
+        padding-top: 30px;
+        height: 90px;
+    }
+
+    .presentation p {
+        margin-top: 230px;
+        font-size: 70px;
+        width: 350px;
+    }
+
+    .container {
+        margin-top: 750px;
     }
 }
